@@ -4,7 +4,7 @@ import subprocess
 import distutils.spawn
 program_required = ["aaa","123","gvim","dasd"]
 installation_list = []
-def prepare_for_needed_software():
+def search_for_needed_software():
 	for program_name in program_required:
 		result = detect_xxx_exist(program_name) 
 		if result == True:
@@ -25,9 +25,13 @@ def detect_xxx_exist(xxx_needed_install):
 		else :
 			print "%s exist"%xxx_needed_install
 			return True
-	
+def install_xxx(argv):
+	for program in argv:
+		if program == "gvim":
+			
+ 	
 def main():
-	prepare_for_needed_software()
+	search_for_needed_software()
 
 if __name__ == "__main__":
 	main();
