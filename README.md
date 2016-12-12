@@ -5,4 +5,4 @@ The target of the project is to quick-set a vim environment,include but not limi
 
 The original version I prefer to use shell to implement .
 ##USAGE
-sudo bash install.sh
+bash install.sh
