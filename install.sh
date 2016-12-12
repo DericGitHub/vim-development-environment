@@ -37,8 +37,8 @@ installpath=$(pwd)
 		echo "==>  You do have taglist installed."
 	else
 		echo "==>  Go to install taglist."
-		cp $installpath/taglist/plugin/taglist.vim .
-		cp $installpath/taglist/doc/taglist.txt ../doc/.
+		sudo cp $installpath/taglist/plugin/taglist.vim .
+		sudo cp $installpath/taglist/doc/taglist.txt ../doc/.
 		echo "==> Taglist installed!"
 	fi 
 
@@ -49,14 +49,14 @@ installpath=$(pwd)
 		echo "==>  You do have winmanager installed."
 	else
 		echo "==>  Go to install winmanager."
-		cp -r $installpath/winmanager/plugin/ .
-		cp -r $installpath/winmanager/doc/ ../doc/.
+		sudo cp -r $installpath/winmanager/plugin/ .
+		sudo cp -r $installpath/winmanager/doc/ ../doc/.
 		echo "==> Winmanager installed!"
 	fi 
 #install vim color scheme
 	echo "Replace the original C syntax highlight rules...."
 	cd /usr/share/vim/vim??/syntax/
-	mv c.vim c.vim.org
-	cp $installpath/c.vim .
+	sudo mv c.vim c.vim.org
+	sudo cp $installpath/c.vim .
 	echo "==>  Replacement completed!"
 
