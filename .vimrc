@@ -21,6 +21,7 @@ set mousehide		" Hide the mouse when typing text
 set t_Co=256
 set tabstop=4
 set nu
+inoremap qq <esc>
 " Make shift-insert work like in Xterm
 "nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> 
 "nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR> 
