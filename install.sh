@@ -55,7 +55,7 @@ installpath=$(pwd)
 		echo "    ==>  You do have winmanager installed."
 	else
 		echo "    ==>  Go to install winmanager."
-		sudo cp -r $installpath/winmanager/plugin/ .
+		sudo cp -r $installpath/winmanager/plugin/* .
 		sudo cp -r $installpath/winmanager/doc/ ../doc/.
 		echo "    ==>  Winmanager installed!"
 	fi 
