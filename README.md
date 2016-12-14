@@ -9,7 +9,7 @@ The original version I prefer to use shell to implement .
 ##USAGE
 ###cscope
     Cscope is a tool which has similar functions with ctags ,we could also treat it as ADVANCED ctags cause it's able to do more things than ctags .
-    Step 1 ,change directory to your target location ,type "cscope -Rkbq" ,then there will be three extra file ,"cscope.in.out cscope.out cscope.po.out" .
+    Step 1 ,change directory to your target location ,type "cscope -Rkbq" ,then there will be three extra files ,"cscope.in.out cscope.out cscope.po.out" .
     Step 2 ,open vim and use ":cs find {querytype} {name}" to jump to what you want .
             {querytype} stands for the type of {name}
             {querytype}   MEANS                                         KEYBOARD SHORTCUT
