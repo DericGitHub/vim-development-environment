@@ -30,7 +30,9 @@ The original version I prefer to use shell to implement .
             i    -----    search for those files would #include {name}  [ctrl+\] i
 ###winmanager
   A classical windows type environment for vim.  
+  
   Quick press "w" and "m" in normal mode could toggle winmanager .
 ###taglist
   Taglist provides an overview of the structure of source code files and allows you to efficiently browse through source code files in different programming languages.  
+  
   We have set the configuration of taglist ,you could just quick press "w" and "m" to open your winmanager which will load taglist automatically .
