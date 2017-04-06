@@ -59,6 +59,16 @@ installpath=$(pwd)
 		sudo cp -r $installpath/winmanager/doc/ ../doc/.
 		echo "    ==>  Winmanager installed!"
 	fi 
+#install markdown if necessary
+    echo "Search for markdown...."
+    cd /usr/share/vim/vim??/plugin/
+    if [ -e "instant-markdown.vim" ];then
+        echo "    ==> You do have markdown installed."
+    else
+        echo "    ==>  Go to install markdown."
+        sudo cp -r $installpath/markdown/plugin/* .
+        echo "    ==>  Markdown installed!"
+    fi
 #install vim color scheme
 	echo "Check the original C syntax highlight rules...."
 	cd /usr/share/vim/vim??/syntax/
